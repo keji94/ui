@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div id="app" v-cloak="">
+        <select v-model="selected">
+            <option v-for="option in options" :value="option.value">{{option.key}}</option>
+        </select>
+        <label>{{selected}}</label>
+    </div>
+
+    <script src="/js/jquery-1.11.3.min.js"></script>
+    <script src="/js/vue.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
